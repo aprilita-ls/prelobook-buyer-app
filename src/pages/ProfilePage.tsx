@@ -20,7 +20,7 @@ interface ProfileMenuOption {
 const ProfilePage = () => {
   const [activeSection, setActiveSection] = useState<string>("profile");
 
-  const menuOptions: ProfileMenuOption[] = [
+  const menuOptions = [
     {
       icon: <User size={20} />,
       label: "Profil",

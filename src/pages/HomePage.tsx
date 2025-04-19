@@ -19,7 +19,7 @@ const recommendedBooks: BookType[] = [
   },
   {
     id: 2,
-    title: "Sapiens: A Brief History of Humankind",
+    title: "Sapiens",
     author: "Yuval Noah Harari",
     price: 185000,
     coverImage: "https://images.unsplash.com/photo-1544947950-fa07a98d237f",
@@ -46,12 +46,11 @@ const recommendedBooks: BookType[] = [
   },
 ];
 
-// Categories
 const categories = [
   { id: 1, name: "Novel", icon: <BookOpen className="text-prelobook-peach" size={24} /> },
   { id: 2, name: "Akademik", icon: <GraduationCap className="text-prelobook-peach" size={24} /> },
   { id: 3, name: "Fiksi", icon: <Book className="text-prelobook-peach" size={24} /> },
-  { id: 4, name: "Self-Help", icon: <Heart className="text-prelobook-peach" size={24} /> },
+  { id: 4, name: "Pengembangan Diri", icon: <Heart className="text-prelobook-peach" size={24} /> },
   { id: 5, name: "Bisnis", icon: <ShoppingBag className="text-prelobook-peach" size={24} /> }
 ];
 

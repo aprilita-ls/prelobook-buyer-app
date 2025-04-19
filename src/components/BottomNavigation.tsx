@@ -14,11 +14,11 @@ const BottomNavigation = () => {
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 py-2 px-4 grid grid-cols-6 items-center">
       <Link to="/" className={`nav-icon ${isActive('/') ? 'text-prelobook-peach' : 'text-gray-500'}`}>
         <Home />
-        <span>Home</span>
+        <span>Beranda</span>
       </Link>
       <Link to="/catalog" className={`nav-icon ${isActive('/catalog') ? 'text-prelobook-peach' : 'text-gray-500'}`}>
         <BookOpen />
-        <span>Catalog</span>
+        <span>Katalog</span>
       </Link>
       <Link to="/academic-packages" className={`nav-icon ${isActive('/academic-packages') ? 'text-prelobook-peach' : 'text-gray-500'}`}>
         <GraduationCap />
@@ -30,11 +30,11 @@ const BottomNavigation = () => {
       </Link>
       <Link to="/cart" className={`nav-icon ${isActive('/cart') ? 'text-prelobook-peach' : 'text-gray-500'}`}>
         <ShoppingCart />
-        <span>Cart</span>
+        <span>Keranjang</span>
       </Link>
       <Link to="/profile" className={`nav-icon ${isActive('/profile') ? 'text-prelobook-peach' : 'text-gray-500'}`}>
         <User />
-        <span>Profile</span>
+        <span>Profil</span>
       </Link>
     </div>
   );

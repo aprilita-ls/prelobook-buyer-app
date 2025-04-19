@@ -102,7 +102,7 @@ const CatalogPage = () => {
           
           <button className="flex items-center gap-1 category-pill">
             <SortDesc size={14} />
-            <span>Sort</span>
+            <span>Urutkan</span>
           </button>
         </div>
         
@@ -113,7 +113,7 @@ const CatalogPage = () => {
               <span className="bg-prelobook-cream text-prelobook-blue px-3 py-1 rounded-full text-sm">Novel</span>
               <span className="bg-prelobook-cream text-prelobook-blue px-3 py-1 rounded-full text-sm">Akademik</span>
               <span className="bg-prelobook-cream text-prelobook-blue px-3 py-1 rounded-full text-sm">Fiksi</span>
-              <span className="bg-prelobook-cream text-prelobook-blue px-3 py-1 rounded-full text-sm">Self-Help</span>
+              <span className="bg-prelobook-cream text-prelobook-blue px-3 py-1 rounded-full text-sm">Pengembangan Diri</span>
             </div>
             
             <h3 className="font-medium mb-2">Kondisi</h3>

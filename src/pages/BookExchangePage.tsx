@@ -11,7 +11,6 @@ interface ExchangeBook extends Book {
   condition: string;
 }
 
-// Mock data for available books for exchange
 const exchangeBooks: ExchangeBook[] = [
   {
     id: 1,
