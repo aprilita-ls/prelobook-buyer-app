@@ -1,5 +1,4 @@
-
-import { Book, BookOpen, GraduationCap, Heart, ShoppingBag } from "lucide-react";
+import { Book, BookOpen, GraduationCap } from "lucide-react";
 import { useState } from "react";
 import BookCard, { Book as BookType } from "../components/BookCard";
 import CategoryPill from "../components/CategoryPill";
@@ -47,15 +46,12 @@ const recommendedBooks: BookType[] = [
 ];
 
 const categories = [
-  { id: 1, name: "Novel", icon: <BookOpen className="text-prelobook-peach" size={24} /> },
+  { id: 1, name: "Fiksi", icon: <BookOpen className="text-prelobook-peach" size={24} /> },
   { id: 2, name: "Akademik", icon: <GraduationCap className="text-prelobook-peach" size={24} /> },
-  { id: 3, name: "Fiksi", icon: <Book className="text-prelobook-peach" size={24} /> },
-  { id: 4, name: "Pengembangan Diri", icon: <Heart className="text-prelobook-peach" size={24} /> },
-  { id: 5, name: "Bisnis", icon: <ShoppingBag className="text-prelobook-peach" size={24} /> }
 ];
 
 const HomePage = () => {
-  const [userName] = useState("Pembeli");
+  const [userName] = useState("Intan");
   
   return (
     <div className="pb-20">
