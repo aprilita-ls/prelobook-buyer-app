@@ -11,6 +11,8 @@ import BookDetailPage from "./pages/BookDetailPage";
 import CartPage from "./pages/CartPage";
 import ProfilePage from "./pages/ProfilePage";
 import NotFound from "./pages/NotFound";
+import AcademicPackagePage from "./pages/AcademicPackagePage";
+import BookExchangePage from "./pages/BookExchangePage";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,8 @@ const App = () => (
             <Route path="/book/:id" element={<BookDetailPage />} />
             <Route path="/cart" element={<CartPage />} />
             <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/academic-packages" element={<AcademicPackagePage />} />
+            <Route path="/book-exchange" element={<BookExchangePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <BottomNavigation />
