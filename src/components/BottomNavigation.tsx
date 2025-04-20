@@ -1,5 +1,5 @@
 
-import { Home, BookOpen, ShoppingCart, User, BookCopy, GraduationCap } from "lucide-react";
+import { Home, BookOpen, ShoppingCart, User, BookCopy, GraduationCap, MessageSquare } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const BottomNavigation = () => {
@@ -11,7 +11,7 @@ const BottomNavigation = () => {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 py-2 px-4 grid grid-cols-6 items-center">
+    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 py-2 px-4 grid grid-cols-7 items-center">
       <Link to="/" className={`nav-icon ${isActive('/') ? 'text-prelobook-peach' : 'text-gray-500'}`}>
         <Home />
         <span>Beranda</span>
@@ -31,6 +31,10 @@ const BottomNavigation = () => {
       <Link to="/cart" className={`nav-icon ${isActive('/cart') ? 'text-prelobook-peach' : 'text-gray-500'}`}>
         <ShoppingCart />
         <span>Keranjang</span>
+      </Link>
+      <Link to="/chats" className={`nav-icon ${isActive('/chats') ? 'text-prelobook-peach' : 'text-gray-500'}`}>
+        <MessageSquare />
+        <span>Pesan</span>
       </Link>
       <Link to="/profile" className={`nav-icon ${isActive('/profile') ? 'text-prelobook-peach' : 'text-gray-500'}`}>
         <User />
