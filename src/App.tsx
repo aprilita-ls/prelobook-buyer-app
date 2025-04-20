@@ -13,6 +13,7 @@ import NotFound from "./pages/NotFound";
 import AcademicPackagePage from "./pages/AcademicPackagePage";
 import BookExchangePage from "./pages/BookExchangePage";
 import ChatPage from "./pages/ChatPage";
+import ChatListPage from "./pages/ChatListPage";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/academic-packages" element={<AcademicPackagePage />} />
             <Route path="/book-exchange" element={<BookExchangePage />} />
+            <Route path="/chats" element={<ChatListPage />} />
             <Route path="/chat/:id" element={<ChatPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

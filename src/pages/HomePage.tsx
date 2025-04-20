@@ -1,17 +1,17 @@
-import { Book, BookOpen, GraduationCap } from "lucide-react";
+import { Book, BookOpen, GraduationCap, BookText, Bookmark } from "lucide-react";
 import { useState } from "react";
 import BookCard, { Book as BookType } from "../components/BookCard";
 import CategoryPill from "../components/CategoryPill";
 import PromoSlider from "../components/PromoSlider";
 import SearchBar from "../components/SearchBar";
 
-// Mock data for recommended books
+// Mock data for recommended books with adjusted prices
 const recommendedBooks: BookType[] = [
   {
     id: 1,
     title: "Atomic Habits",
     author: "James Clear",
-    price: 150000,
+    price: 75000,
     coverImage: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e",
     rating: 4.8,
     condition: "Baru"
@@ -20,7 +20,7 @@ const recommendedBooks: BookType[] = [
     id: 2,
     title: "Sapiens",
     author: "Yuval Noah Harari",
-    price: 185000,
+    price: 79000,
     coverImage: "https://images.unsplash.com/photo-1544947950-fa07a98d237f",
     rating: 4.7,
     condition: "Sangat Baik"
@@ -29,7 +29,7 @@ const recommendedBooks: BookType[] = [
     id: 3,
     title: "Educated: A Memoir",
     author: "Tara Westover",
-    price: 125000,
+    price: 65000,
     coverImage: "https://images.unsplash.com/photo-1512820790803-83ca734da794",
     rating: 4.5,
     condition: "Baik"
@@ -38,7 +38,7 @@ const recommendedBooks: BookType[] = [
     id: 4,
     title: "The Psychology of Money",
     author: "Morgan Housel",
-    price: 135000,
+    price: 72000,
     coverImage: "https://images.unsplash.com/photo-1589998059171-988d887df646",
     rating: 4.6,
     condition: "Baru"
@@ -48,10 +48,13 @@ const recommendedBooks: BookType[] = [
 const categories = [
   { id: 1, name: "Fiksi", icon: <BookOpen className="text-prelobook-peach" size={24} /> },
   { id: 2, name: "Akademik", icon: <GraduationCap className="text-prelobook-peach" size={24} /> },
+  { id: 3, name: "Novel", icon: <Book className="text-prelobook-peach" size={24} /> },
+  { id: 4, name: "Kamus", icon: <BookText className="text-prelobook-peach" size={24} /> },
+  { id: 5, name: "Antologi", icon: <Bookmark className="text-prelobook-peach" size={24} /> },
 ];
 
 const HomePage = () => {
-  const [userName] = useState("Intan");
+  const [userName] = useState("John");
   
   return (
     <div className="pb-20">
