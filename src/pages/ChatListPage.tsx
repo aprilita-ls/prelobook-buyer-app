@@ -15,7 +15,7 @@ const chatPreviews: ChatPreview[] = [
   {
     id: 1,
     sellerName: "Toko Buku Cahaya",
-    sellerImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+    sellerImage: "https://images.unsplash.com/photo-1438761681033-6460ffad8d80",
     lastMessage: "Ya, masih tersedia. Kondisinya masih sangat bagus",
     timestamp: "09:32",
     unread: true,
@@ -42,14 +42,14 @@ const ChatListPage = () => {
   return (
     <div className="min-h-screen pb-20">
       <div className="bg-white border-b px-4 py-3">
-        <h1 className="text-xl font-bold text-prelobook-blue">Pesan</h1>
+        <h1 className="text-xl font-bold text-prelobook-blue">Riwayat Pesan</h1>
       </div>
 
       <div className="p-4 space-y-4">
         {chatPreviews.length === 0 ? (
           <div className="text-center py-8 text-gray-500">
             <MessageCircle className="mx-auto mb-2 text-gray-400" size={32} />
-            <p>Belum ada pesan</p>
+            <p>Belum ada riwayat pesan</p>
           </div>
         ) : (
           chatPreviews.map((chat) => (
