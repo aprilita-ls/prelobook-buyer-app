@@ -1,13 +1,12 @@
-
 import { useState } from "react";
 import { ClipboardList, LogOut, Settings, ShoppingBag, User } from "lucide-react";
 
-// Mock user data
+// Updated user data
 const user = {
-  name: "John Doe",
-  email: "john.doe@example.com",
+  name: "Intan Putri",
+  email: "intanputri@gmail.com",
   phone: "+62 812-3456-7890",
-  address: "Jl. Sudirman No. 123, Jakarta Pusat"
+  address: "Jl. Sudirman No.145, Kota Malang"
 };
 
 interface ProfileMenuOption {

@@ -1,3 +1,4 @@
+
 import { Book, BookOpen, GraduationCap, BookText, Bookmark } from "lucide-react";
 import { useState } from "react";
 import BookCard, { Book as BookType } from "../components/BookCard";
@@ -54,7 +55,7 @@ const categories = [
 ];
 
 const HomePage = () => {
-  const [userName] = useState("John");
+  const [userName] = useState("Intan");
   
   return (
     <div className="pb-20">
